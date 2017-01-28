@@ -4,7 +4,12 @@ public class ExtraIntListPractice {
       * to change. */
     public static IntList incrList(IntList L, int x) {
         /* Your code here. */
-        
+	IntList p = L;
+	while(p != null){
+	p.head += x;
+	p = p.tail;
+}
+        return p;        
     }
 
     /** Returns an IntList identical to L, but with
